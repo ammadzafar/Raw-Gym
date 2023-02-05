@@ -1,0 +1,233 @@
+#page-topbar {
+    height: 105px;
+}
+
+.navbar-header {
+    height: 100%;
+}
+
+.card-hover-pointer {
+    cursor: pointer;
+}
+
+.box-styling {
+    background-color: #9b948a;
+    color: #000;
+    /*padding: 5px;*/
+    /*border-radius: 5px;*/
+    /*box-shadow: 0px 0px 7px 3px #d5d5d5;*/
+    /*text-align: center;*/
+    /*background-color: #F3F5F7;*/
+}
+
+.dashboard-row-card {
+    max-width: 19% !important;
+}
+
+.card-bg {
+    background-color: #9b948a;
+    padding: 15px 10px 15px 10px !important;
+
+}
+
+/*.member-content{*/
+/*   height: 50px;*/
+/*}*/
+.locker-main p {
+    font-size: 18px;
+    color: #fff;
+}
+
+.locker-box {
+    height: 96px;
+    background-color: #9b948a;
+    border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    .dashboard-row-card {
+        max-width: 100% !important;
+    }
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700);
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.box {
+    position: relative;
+    max-width: 600px;
+    width: 90%;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+
+/* common */
+.member-card .ribbon {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.member-card .ribbon::before,
+.member-card .ribbon::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    border: 5px solid #adb5bd;
+}
+
+.member-card .ribbon span {
+    position: absolute;
+    display: block;
+    width: 225px;
+    padding: 8px 0;
+    background-color: #3498db;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* top left*/
+.member-card .ribbon-top-left {
+    top: -10px;
+    left: -10px;
+}
+
+.member-card .ribbon-top-left::before,
+.member-card .ribbon-top-left::after {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.member-card .ribbon-top-left::before {
+    top: 0px;
+    right: 16px;
+}
+
+.member-card .ribbon-top-left::after {
+    bottom: 16px;
+    left: 0;
+}
+
+.member-card .ribbon-top-left span {
+    right: -25px;
+    top: 30px;
+    transform: rotate(-45deg);
+}
+
+.card-dark-shadow {
+    box-shadow: 0 0.75rem 1.5rem rgb(18 38 63 / 19%);
+}
+
+.custom-fullscreen-modal {
+    max-width: 1350px !important;
+    width: 100vw;
+    margin: 0 !important;
+}
+
+.custom-fullscreen-modal .modal-content {
+    height: 100vh;
+    overflow: auto;
+    border-radius: 0;
+}
+
+.pending-fee-dashboard {
+    max-width: 300px !important;
+}
+
+.dashboard-right-sidebar-btn {
+    position: fixed;
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+
+.noti-icon .badge {
+    position: absolute;
+    top: 10px !important;
+    right: 3px !important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #eff2f7;
+    background-color: #343a40;
+}
+
+.custom_ribbon {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.custom_ribbon_text {
+    display: inline-block;
+    padding: 0.5em 1em;
+    min-width: 15em;
+    line-height: 1.2em;
+    background-color: #FFD72A;
+    position: relative;
+    color: #fff;
+    font: 700 18px/1 'Lato', sans-serif;
+    text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+}
+
+.custom_ribbon:after, .custom_ribbon:before,
+.custom_ribbon_text:before, .custom_ribbon_text:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+}
+
+.custom_ribbon:before {
+    top: 0.3em;
+    left: 0.2em;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #EBECED;
+    z-index: -2;
+}
+
+.custom_ribbon_text:before {
+    bottom: 100%;
+    left: 0;
+    border-width: .5em .7em 0 0;
+    border-color: transparent #adb5bd transparent transparent;
+}
+
+.custom_ribbon_text:after {
+    top: 100%;
+    right: 0;
+    border-width: .5em 2em 0 0;
+    border-color: #adb5bd transparent transparent transparent;
+}
+
+.custom_ribbon:after {
+    top: 0.5em;
+    right: -2em;
+    border-width: 1.1em 1em 1.1em 3em;
+    border-color: #adb5bd transparent #adb5bd #adb5bd;
+    z-index: -1;
+}
+
+.height-100vh {
+    max-height: 100vh;
+    overflow-y: auto;
+}

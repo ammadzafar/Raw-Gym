@@ -1,0 +1,4 @@
+[10-Nov-2021 06:01:44 America/New_York] PHP Fatal error:  Uncaught Error: Class "Phar" not found in /opt/cpanel/composer/bin/composer:23
+Stack trace:
+#0 {main}
+  thrown in /opt/cpanel/composer/bin/composer on line 23
